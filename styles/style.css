@@ -1,0 +1,195 @@
+:root{
+    --blanco: #ffffff;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --oscuro: #212121;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tittle{
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 376px){
+    .tittle{
+        line-height: .71;
+        margin: 4px auto;
+    }
+}
+
+h1 span{
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+nav {
+    display: block;
+    background-color: var(--secundario);
+    margin: 0%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0%;
+    align-items: center;
+    padding: 0;
+}
+
+.nav__item{
+    list-style: none;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
+
+.nav__item a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight:700;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+}
+
+.nav__item a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+@media (max-width: 650px){
+    nav ul{
+        flex-direction:column;
+    }
+    .nav__item a, .nav__item, nav ul{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+    nav ul{
+        padding: 0;
+    }
+    .nav__item{
+        padding: 0;
+    }
+}
+
+header{
+    background-image:url(../src/hero.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .header__decoracion{
+    background-color: rgba(1, 1, 1, 0.685);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 450px;
+}
+
+@media (max-width: 475px){
+    header{
+        height: 350px;
+    }
+    header .header__decoracion{
+        height: 350px;
+    }
+}
+
+.header__tittle{
+    font-size: 4rem;
+    color: var(--blanco);   
+}
+
+.header__ubi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header__ubi hr{
+    width: 75%;
+}
+
+.header__ubi i{
+    font-size: 7rem;
+    transition: .2s;
+}
+
+.header__ubi h3{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header__item{
+    color: var(--blanco);
+    text-align: center;
+}
+
+header hr{
+    text-decoration: none;
+    color: var(--blanco);
+    border: solid var(--blanco) 5px;
+    background-color: var(--blanco);
+}
+
+.header__btn{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    background-color: var(--secundario);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.header__btn:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+@media (max-width: 650px){
+    .header__btn{
+        display:block;
+        width: 90vw;
+    }
+}
+
+/*Mucho ojo a esto, es una maravilla*/
+
+.header__decoracion:hover > .header__ubi i{
+    color: var(--primario);
+    transition: ease-in-out .2s;
+    transform: translateY(-20px);
+}
+
+/*
+[x]Investigar el hover compuesto
+[ ]Pasar a limpio el hover compuesto (Notion)
+[X]Hacer el diseño responsive (nav)
+[ ]Limpiar la chapuza del MQ del nav
+[X]Añadir MQ para el titulo cuando se hace pequeño
+*/
