@@ -1,4 +1,4 @@
-/*Varibles*/
+/*** VARIABLES */
 :root{
     --blanco: #ffffff;
     --primario: #FFC107;
@@ -6,8 +6,11 @@
     --gris: #757575;
     --oscuro: #212121;
 }
+/*** FIN DE VARIABLES ***/
 
-/*Generales*/
+/*=======================*/
+
+/*** GENERALES ***/
 *{
     margin: 0;
     padding: 0;
@@ -22,8 +25,11 @@ body{
 	font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
+/*** FIN DE GENERALES***/
 
-/*Titulo*/
+/*===================*/
+
+/*** TITULO ***/
 .tittle{
     display: block;
     font-size: 4rem;
@@ -43,8 +49,11 @@ body{
     font-weight: 100;
     font-size: 3rem;
 }
+/*** FIN DE TITULO***/
 
-/*Navegador*/
+/*-=================*/
+
+/*** NAVEGADOR ***/
 nav {
     display: block;
     background-color: var(--secundario);
@@ -73,48 +82,79 @@ nav ul{
     font-size: 1.7rem;
 }
 
-.nav__item a:hover{
+/*MouseOnly del nav*/
+@media (hover: hover){
+    .nav__item a:hover{
+        background-color: var(--primario);
+        color: var(--oscuro);
+    }
+}
+
+/*Pseudoclase active del nav*/
+.nav__item a:active{
     background-color: var(--primario);
     color: var(--oscuro);
 }
 
-/* [ ] Esto está en la checklsit hay que limpiarlo*/
-/* [ ] Tambien implementa el MouseOnly y active (Se puede combinar)*/
+/*MQ del nav*/
 @media (max-width: 650px){
     nav ul{
         flex-direction:column;
-    }
-    .nav__item a, .nav__item, nav ul{
         display: block;
-        text-align: center;
-        margin: 0;
+    }
+
+    .nav__item a, .nav__item{
         padding: .5rem;
+        text-align: center;
+        display: block;
+        margin: 0;
     }
-    nav ul{
-        padding: 0;
-    }
+
     .nav__item{
         padding: 0;
     }
-}
 
-/*HeaderHero*/
-/* [ ] Hay que hacerlo mas pequeño, hay exceso de aire*/
+}
+/*** FIN DEL NAVEGADOR ***/
+
+/*==================*/
+
+/*** HEADER ***/
 header{
     background-image:url(../src/hero.jpg);
     height: 30rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
-header .header__decoracion{
+/*MQ del tamaño del header*/
+@media (max-width: 480px){
+    header{
+        height: 25rem;
+    }
+}
+
+@media (max-width: 280px){
+    header{
+        height: 29rem;
+    }
+}
+
+.header__decoracion{
     background-color: rgba(1, 1, 1, 0.685);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header__contenido{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 30rem;
+    height: 100%;
 }
 
 .header__tittle{
@@ -187,13 +227,26 @@ header hr{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
 /*
-[x]Investigar el hover compuesto
+[X]Investigar el hover compuesto
 [X]Añadir MQ para el titulo cuando se hace pequeño
 [X]Hacer el diseño responsive (nav)
+[X]Limpiar la chapuza del MQ del nav o volverlo a hacer (Mejor)
+[X]Cambiar el tamaño de la chincheta para tamaños moviles (Ya que no se va  mover no necesita tanto hueco) (Hacer mas pequeño el container)
+[X]Hacer el nav modo Mouse only
 [ ]Pasar a limpio el hover compuesto (Notion)
 [ ]Pasar a limpio el hover mouseOnly (Notion)
-[ ]Limpiar la chapuza del MQ del nav o volverlo a hacer (Mejor)
-[ ]Cambiar el tamaño de la chincheta para tamaños moviles (Ya que no se va  mover no necesita tanto hueco) (Hacer mas pequeño el container)
+[ ]Hacer active la chincheta
+[ ]Hacer el main y rellenarlo
 */
 
