@@ -220,7 +220,7 @@ header hr{
 
 /*:Hover mouse Only + :hover que modifica elemento interno*/
 @media (hover: hover){
-    .header__decoracion:hover > .header__ubi i{
+    .header__decoracion:hover > .header__contenido .header__ubi i{
         color: var(--primario);
         transition: ease-in-out .2s;
         transform: translateY(-20px);
