@@ -78,14 +78,16 @@ nav ul{
     text-decoration: none;
     color: var(--blanco);
     font-weight:700;
-    padding: 1rem 1rem;
+    padding: .8rem 1rem;
     font-size: 1.7rem;
 }
 
 /*MouseOnly del nav*/
 @media (hover: hover){
-    .nav__item a:hover{
+    .nav__item:hover{
         background-color: var(--primario);
+    }
+    .nav__item:hover> a {
         color: var(--oscuro);
     }
 }
@@ -248,6 +250,6 @@ header hr{
 [ ]Pasar a limpio el hover mouseOnly (Notion)
 [ ]Hacer active la chincheta
 [ ]Hacer el main y rellenarlo
-[ ]Revisar el hover del nav, creo que se desborda por arriba
+[X]Revisar el hover del nav, creo que se desborda por arriba
 */
 
