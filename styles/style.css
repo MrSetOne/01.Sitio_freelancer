@@ -240,19 +240,22 @@ header hr{
 /***DEFINICION DEL MAIN***/
 main{
         background-color: var(--blanco);
-        margin: 3rem 10rem;
+        margin: 1rem 7rem;
         border-radius: 1.5rem;
+        padding: 3rem;
 }
 
 main h2{
     font-size: 3.2rem;
     display: block;
     text-align: center;
-    padding-top: 3rem;
     color: var(--oscuro);
     text-transform: uppercase;
 }
 
+/*Version1*/
+
+/*
 .servicios{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -266,7 +269,7 @@ main h2{
      justify-content: space-between;
      gap: 2rem;
      margin: 3rem 0;
-     height: 25rem;
+     height: 30rem;
 }
 
 .servicios__item h3{
@@ -306,9 +309,98 @@ main h2{
         margin: 3rem;
     };
 }
+*/
+
+/*Version2*/
+
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.servicios__item{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 2rem;
+ margin: 3rem 0;
+ height: 30rem;
+}
+
+.servicios__item h3{
+ font-size: 2rem;
+ color: var(--secundario);
+}
+
+.servicios__item div{
+ background-color: var(--primario);
+ height: 10rem;
+ width: 10rem;
+ font-size: 3rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 50%;
+}
+
+.servicios__item p{
+text-align: justify;
+}
 
 
+#moviles{
+justify-content: space-around;
+}
 
+@media (max-width: 885px){
+    .servicios{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }    
+    .servicios__item{
+        display: grid;
+        grid-template-columns: 10rem 1fr;
+        grid-template-rows: 4rem 1fr;
+        height: auto;
+        margin: 0;
+        gap: .5rem 1rem;
+    }
+    .servicios__item div{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        align-self: center;
+        justify-self: center;
+    }
+    .servicios__item h3{
+        align-self: flex-end;
+    }
+    .servicios__item p{
+        align-self: flex-start;
+    }
+    main h2{
+        margin-bottom: 3rem;
+    }
+
+    main{
+        margin: 1rem 4.5rem;
+    }
+}
+
+@media (max-width: 455px){
+    .servicios__item{
+        display: flex;
+    }
+    .servicios__item h3{
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+    main{
+        margin: 1 rem 3rem;
+    }
+}
 
 
 
@@ -324,7 +416,7 @@ main h2{
 [ ]Pasar a limpio el hover compuesto (Notion)
 [ ]Pasar a limpio el hover mouseOnly (Notion)
 [ ]Hacer active la chincheta
-[ ]Hacer el main y rellenarlo
+[X]Hacer el main y rellenarlo
 [X]Revisar el hover del nav, creo que se desborda por arriba
 */
 
