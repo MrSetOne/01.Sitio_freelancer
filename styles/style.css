@@ -280,6 +280,7 @@ main h2{
  align-items: center;
  justify-content: center;
  border-radius: 50%;
+ transition: .2s;
 }
 
 .servicios__item p{
@@ -341,8 +342,24 @@ justify-content: space-around;
     }
 }
 
+@media (hover: hover){
+    .servicios__item div:hover{
+        background-color: var(--oscuro);
+        transition: .2s;
+    }
+    .servicios__item div:hover > i{
+        color: var(--primario);
+        transition: .2s;
+    }
+}
 
+.servicios__item div:active{
+    background-color: var(--oscuro);
+}
 
+.servicios__item div:active > i{
+    color: var(--primario);
+}
 
 
 /*
