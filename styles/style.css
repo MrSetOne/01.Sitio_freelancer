@@ -213,16 +213,23 @@ header hr{
     font-weight: 700;
 }
 
-.header__btn:hover{
-    background-color: var(--primario);
-    color: var(--oscuro);
-}
-
 @media (max-width: 650px){
     .header__btn{
         display:block;
         width: 90vw;
     }
+}
+
+@media (hover: hover){
+    .header__btn:hover{
+        background-color: var(--primario);
+        color: var(--oscuro);
+    }
+}
+
+.header__btn:active{
+    background-color: var(--primario);
+    color: var(--oscuro);
 }
 
 /*:Hover mouse Only + :hover que modifica elemento interno*/
