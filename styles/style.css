@@ -423,6 +423,33 @@ justify-content: space-around;
     grid-column: 2 / span 3;
 }
 
+.formulario__campos label{
+    color:var(--blanco);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.formulario__campos input,
+.formulario__mensaje{
+    font-size: 1.6rem;
+    padding: .4rem;
+    resize: none;
+    width: 100%;
+    border: none;
+    border-radius: .3rem;
+}
+
+.formulario__campos a{
+    grid-column: 4/5;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--secundario);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
 
 
 /*
