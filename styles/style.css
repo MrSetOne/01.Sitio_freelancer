@@ -448,6 +448,10 @@ justify-content: space-around;
     text-align: end;
 }
 
+.formulario__mensaje{
+    height: 10rem;
+}
+
 .formulario__email,
 .formulario__mensaje{
     grid-column: 2 / span 3;
@@ -544,18 +548,3 @@ footer p{
     color: var(--secundario);
     font-size: 1rem;
 }
-
-/*
-[X]Investigar el hover compuesto
-[X]Añadir MQ para el titulo cuando se hace pequeño
-[X]Hacer el diseño responsive (nav)
-[X]Limpiar la chapuza del MQ del nav o volverlo a hacer (Mejor)
-[X]Cambiar el tamaño de la chincheta para tamaños moviles (Ya que no se va  mover no necesita tanto hueco) (Hacer mas pequeño el container)
-[X]Hacer el nav modo Mouse only
-[ ]Pasar a limpio el hover compuesto (Notion)
-[ ]Pasar a limpio el hover mouseOnly (Notion)
-[X]Hacer active la chincheta
-[X]Hacer el main y rellenarlo
-[X]Revisar el hover del nav, creo que se desborda por arriba
-*/
-
