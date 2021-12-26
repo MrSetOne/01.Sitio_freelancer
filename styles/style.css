@@ -124,6 +124,9 @@ body{
         padding: 0;
     }
 
+    nav{
+        position: static;
+    }
 }
 /*** FIN DEL NAVEGADOR ***/
 
@@ -285,7 +288,7 @@ main h2{
  flex-direction: column;
  align-items: center;
  gap: 2rem;
- margin: 3rem 0;
+ margin: 0;
 }
 
 .servicios__item h3{
@@ -389,7 +392,9 @@ justify-content: space-around;
     color: var(--primario);
 }
 
-
+#contact{
+    margin-top: 3rem;
+}
 
 .formulario{
     background-color: var(--gris);
