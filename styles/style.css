@@ -361,6 +361,12 @@ justify-content: space-around;
     }
 }
 
+@media (max-width: 325px){
+    main{
+        margin:1rem 1.5rem;
+    }
+}
+
 @media (hover: hover){
     .servicios__item div:hover{
         background-color: var(--oscuro);
@@ -380,6 +386,8 @@ justify-content: space-around;
     color: var(--primario);
 }
 
+
+
 .formulario{
     background-color: var(--gris);
     display: flex;
@@ -391,7 +399,6 @@ justify-content: space-around;
     align-items: center;
     justify-content: space-around;
     border-radius: 1rem;
-    height: 30rem;
 }
 
 .formulario legend{
@@ -408,6 +415,7 @@ justify-content: space-around;
     align-content: center;
     align-items: center;
     column-gap: .5rem;
+    width: 100%;
 }
 
 .formulario__campos input{
@@ -447,10 +455,73 @@ justify-content: space-around;
     background-color: var(--secundario);
     padding: 1rem;
     border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
+@media (hover: hover){
+    .formulario__campos a:hover{
+        background-color: var(--primario);
+        color: var(--oscuro);
+    }
+}
 
+.formulario__campos a:active{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
 
+@media (max-width: 730px){      
+    .formulario__campos label{
+        grid-column: 1/2;
+    }
+
+    .formulario__campos input{
+        grid-column: 2/5;
+    }
+}
+
+@media (max-width: 575px){
+    .formulario__campos label,
+    .formulario__campos input,
+    .formulario__campos textarea,
+    .formulario__campos a{
+        grid-column: 1/5
+    }
+
+    .formulario__campos label{
+        text-align: start;
+    }
+
+    .formulario__campos{
+        gap: .2rem;
+    }
+
+    .formulario__campos a{
+        margin-top: 1.2rem;
+    }
+}
+
+@media (max-width: 450px){
+    .formulario{
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 380px){
+    .formulario__campos{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+footer p{
+    display: block;
+    text-align: end;
+    margin: 1rem;
+    margin-bottom: 1rem;
+    color: var(--secundario);
+    font-size: 1rem;
+}
 
 /*
 [X]Investigar el hover compuesto
