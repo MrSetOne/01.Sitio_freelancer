@@ -12,9 +12,11 @@
 
 /*** SCROLL SNAP ***/
 
+/*
 html{
     scroll-snap-type: y mandatory;
 }
+*/
 
 /*** FIN DE SCROLL SNAP ***/
 
