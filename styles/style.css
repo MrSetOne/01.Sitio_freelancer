@@ -260,6 +260,18 @@ main h2{
     text-transform: uppercase;
 }
 
+@media (min-width: 1150px ){
+    main{
+        margin: 1rem 15rem;
+    }
+}
+
+@media (min-width: 1600px ){
+    main{
+        margin: 1rem 40rem;
+    }
+}
+
 .servicios{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
