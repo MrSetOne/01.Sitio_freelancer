@@ -10,6 +10,16 @@
 
 /*=======================*/
 
+/*** SCROLL SNAP ***/
+
+html{
+    scroll-snap-type: y mandatory;
+}
+
+/*** FIN DE SCROLL SNAP ***/
+
+/*=======================*/
+
 /*** GENERALES ***/
 *{
     margin: 0;
@@ -36,6 +46,8 @@ body{
     font-weight: 700;
     text-align: center;
     margin: 0;
+    scroll-snap-stop: allway;
+    scroll-snap-align: start;
 }
 
 @media (max-width: 376px){
@@ -264,6 +276,8 @@ main h2{
     text-align: center;
     color: var(--oscuro);
     text-transform: uppercase;
+    scroll-snap-stop: allway;
+    scroll-snap-align: start;
 }
 
 @media (min-width: 1150px ){
